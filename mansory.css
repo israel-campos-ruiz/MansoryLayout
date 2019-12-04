@@ -1,0 +1,52 @@
+body{
+  background: #f2f2f2;
+}
+img {
+  max-width: 100%;
+  display: block;
+  /*height: 100%;
+  object-fit: cover; Esto no funciona correctamente*/
+}
+.container-gallery{
+  width: 95%;
+  max-width:1400px;
+  margin: auto;
+  cursor: pointer;
+}
+.gallery-item{
+  margin: 4px 2px;
+  transition: all 1s ease-in-out;
+}
+.gallery-item img:hover{
+  transform: scale(1.01);
+  transition: all 1s ease-in-out;
+}
+.masonry-layout {
+  --columns: 1;
+  --gap: 1px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 280px);
+  grid-gap: var(--gap);
+}
+.masonry-layout .masonry-item {
+  margin-bottom: var(--gap);
+}
+.masonry-layout.columns-1 {
+  --columns: 1;
+}
+.masonry-layout.columns-2 {
+  --columns: 2;
+}
+.masonry-layout.columns-3 {
+  --columns: 3;
+}
+.masonry-layout.columns-4 {
+  --columns: 4;
+}
+.masonry-layout.columns-5 {
+  --columns: 5;
+}
+.masonry-layout.columns-6 {
+  --columns: 6;
+}

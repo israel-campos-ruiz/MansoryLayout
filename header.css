@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+}
+header{
+    background-size:cover;
+    background-position:center;
+    object-fit: cover;
+    background-image: url(../mansory-layout/wedding.jpg);
+    background-blend-mode: soft-light;
+    background-color: rgba(90,90,90);
+    font-weight: 200;
+    font-family: 'Raleway', sans-serif;
+    height:750px;
+    width:100%;
+
+
+  
+}
+
+header img {
+    width: 100%;
+    vertical-align: top;
+}
+.nav1{
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    display: flex;
+    justify-content: space-between;
+    height:80px;
+    position: fixed;
+    width: 100%;
+    transition: all 1.5s ease-in;
+    padding-top: 2000px;/*la sube 2000px y hace el efecto como una cortina la voy a quitar para maquetar en responsive*/
+}
+
+.nav2{ /*esta clase es para javascript para cuando hagas el scroll cambie de color */
+    background: #1E1E1E;
+    box-shadow: 0 0 10px 0 #000;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    height: 100px;
+    justify-content: space-between;
+    transition: all 1.5s ease-in;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.container-nav{
+    width:90%;
+    max-width:1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height:80px;
+    width: 100%;
+}
+.enlaces{
+    padding: 20px;
+}
+.enlaces a{
+    color: #f2f2f2;
+    font-size:20px;
+    text-decoration: none;
+    padding: 20px;
+}
+.enlaces a:hover{
+    border-bottom:1px solid #1498a4;
+    transition: all 1s;
+    
+}
+
+.logo{
+    color: white;
+    font-size:20px;
+    height:80px;
+    padding: 20px;
+    width: 100px;
+}
+
+.hamburguer{
+    display:none; /*con responsive si lo vamos a ocupar ahorita no */
+    font-size: 20px;
+    color: #ffff;
+    padding: 20px;
+}
+.textoHeader{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height:800px;
+    justify-content: center;
+}
+.pNameWedding{
+    font-size: 50px;
+    color: #f2f2f2f2;
+    padding:20px 0px;
+}
+.pDate{
+    font-size:15px;
+    color:#fff;
+}
+
+@media screen and (max-width:850px){
+    .hamburguer{
+        display: block;
+        cursor: pointer;
+    }
+    .enlaces{
+       position: fixed;
+       top:100px;
+       background: rgba(0,0,0,0.9);
+       left: -40px;
+       min-height: 100vh;
+       transition: 1s;
+       width:0;
+       overflow: hidden;
+    }
+    .enlaces a {
+        margin-top: 0;
+        display: block;
+        text-align: center;
+    }
+    .enlaces a:hover{
+        border-bottom:  1px solid #fff;
+    }
+    .pNameWedding{
+        font-size: 35px;
+        color: #f2f2f2f2;
+        padding:20px 0px;
+    }
+}
+
+@media screen and (max-width:602px){
+    .pNameWedding{
+        font-size: 25px;
+        color: #f2f2f2;
+        padding: 18px 0px;
+    }
+}

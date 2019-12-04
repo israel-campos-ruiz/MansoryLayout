@@ -1,0 +1,42 @@
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+
+}
+
+.modal-conten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top:50px;
+}
+
+.modal-img {
+    object-fit: cover;
+    height: 70%;
+    width: 28%;
+    position: relative;
+    border:1px solid #f2f2f2;
+}
+.boton2 {
+    position: absolute;
+    font-family: sans-serif;
+    font-size:35px;
+    position: absolute;
+    color:rgba(255,255,255,0.9);
+    top:20%;
+    right: 8%;
+    cursor: pointer;
+}
+.boton2 span{
+    cursor: pointer;
+}
+.modal-open{
+    display: block;
+}
